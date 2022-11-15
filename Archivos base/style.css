@@ -1,26 +1,15 @@
-body{
-    background: rgba(188, 255, 247, 0.444);
+*{
+    background: rgba(241, 226, 255, 0.832);
 }
-h1{
-    color: rgb(2, 30, 142);
+input{
+    background: rgb(252, 216, 255);
+    padding: 10px;
+    
+}
+button{
+    margin: 100px auto; 
+    background: rgb(91, 74, 207);
+    color: aliceblue;
+    padding: 10px;
 
 }
-table th tr{
-    padding: 10px;
-}
-table{
-    margin: 100px auto;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(230, 255, 255);
-    width: 500px;
-    height: 350px;
-    font-size: 20px;
-}
-th{
-    background: rgba(167, 253, 253, 0.724);
-}
-td, th {
-    color: black;
-    border: solid rgb(44, 229, 253) 3px;
- }
