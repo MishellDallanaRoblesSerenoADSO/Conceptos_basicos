@@ -1,35 +1,37 @@
 addEventListener("DOMContentLoaded", (e)=>{
+    
+    let tarea= document.getElementById("tarea")
+    let agregar= document.getElementById("agregar")
+    let listado= document.getElementById("listado")
+    let cantidad= document.getElementById("cantidad")
 
-    let gradosc = document.getElementById("c")
-    let Fahrg = document.getElementById("fh")
-
-    let convierte= document.getElementById("convierte")
-    let conversor= document.getElementById("conversor")
-    convierte.addEventListener('click',p)
-
-    function p(){
-        let gc= parseFloat(c.value)
-        let gf= parseFloat(fh.value)
-        
-        r=0
-        if(gc >=1 || gfh >=1){
-            if (gc>=0 && gf >=0){
-            conversor.innerText="Dígite un solo campo \n Grados centigrados "
-                
-        }else{
-            if(gc >=0 || gc <=0){
-                r= (gc*9/5)+32
-                conversor.innerText="La conversion de grados centigrados a fahrenheit es: "+r 
-            
-            }
-
-            if(gf >=0 || gf <=0){
-                r= (gf-32)*5/9
-                conversor.innerText="La conversion de grados fahrenheit a centigrados es: "+r 
-
-            }   
+    total= 0
+    //funcion que agrega la tarea al listado
+    agregar.onclick = function(){
+        //Controla si el campo esta vacio
+        if(tarea.value == ""){
+            return;
         }
-    }  
-}  
+        //valor del campo
+        let elemento= tarea.value
+        //crear un elemento li
+        let li= document.createElement("li")
+        li.textContent= elemento
+        //se agrega li al listado
+        listado.appendChild(li)
+        //cantidad de tareas
+        total++
+        cantidad.innerHTML=total
 
+        let eliminar= document.createElement("span")
+        eliminar.textContent= "\u00d7";
+        li.appendChild(eliminar);
+
+        eliminar.onclick= function(){
+            li.remove();
+            total--
+            cantidad.innerHTML=total
+        }
+        tarea.value=""
+    }
 })
