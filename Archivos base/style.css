@@ -2,15 +2,30 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+h3{
+    color: rgb(0, 52, 195);
+}
 section{
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
     text-align: center;
-    border: 3px solid rgb(209, 5, 93);
-    border-radius: 5px;
+    border: 5px double rgb(30, 58, 217);
+    border-radius: 9px;
     padding: 10px;
-    background-color: rgba(248, 95, 121, 0.295);
+    background-color: rgba(140, 226, 224, 0.531);
 }
+.section2{
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
+    border: 5px double rgb(217, 70, 30);
+    border-radius: 9px;
+    background-color: rgba(237, 255, 121, 0.66);
+}
+.img{
+    height: 10em;
+}
+
 input{
     border: 2px solid rgb(0, 0, 0);
     width: 70%;
@@ -23,27 +38,13 @@ button{
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    background-color: rgb(248, 66, 66);
+    color: rgb(255, 255, 255);
 }
 ul{
     text-align: left;
 }
 ul li{
-    border-bottom: 1px dashed rgb(0, 0, 0);
+    border-bottom: 1px dashed rgb(0, 89, 255);
     margin: 10px 0;
-}
-span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: crimson;
-    border-radius: 100%;
-    text-align: center;
-    color: aliceblue;
-    margin: 0 10px;
-    cursor: pointer;
-}
-span:hover{
-    background-color: rgb(255, 175, 175);
 }
